@@ -2,17 +2,19 @@
   "name": "trial",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
+  "dependencies": {
+    "mongodb": "^2.2.29"
+  },
+  "engines":{
+    "node": "6.10.3",
+    "npm" : "5.0.2"
+  },
+
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
-  "engines": {
-      "node" : "6.10.3",
-      "npm" : "5.0.2"
-  },
-  "dependencies": {
-    "mongodb": "^2.2.29"
-  }
+  "author": "Darius",
+  "license": "ISC"
 }
