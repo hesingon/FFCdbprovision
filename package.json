@@ -7,8 +7,8 @@
     "mongodb": "^2.2.29"
   },
   "engines":{
+    "npm" : "5.0.2",
     "node": "6.10.3",
-    "npm" : "5.0.2"
   },
 
   "devDependencies": {},
