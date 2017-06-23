@@ -8,6 +8,10 @@
   },
   "author": "",
   "license": "ISC",
+  "engines":{
+      "node": "6.10.3",
+      "npm" : "5.0.2"
+  },
   "dependencies": {
     "mongodb": "^2.2.29"
   }
