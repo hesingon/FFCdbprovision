@@ -7,7 +7,7 @@ var MongoClient = mongodb.MongoClient;
 // Connection URL. This is where your mongodb server is running.
 
 //(Focus on This Variable)
-var url = 'mongodb://user1:123456@ds139959.mlab.com:39959/url-shortener';     
+var url = 'mongodb://admin:123456@ds139959.mlab.com:39959/url-shortener';     
 //(Focus on This Variable)
 
 // Use connect method to connect to the Server
@@ -23,3 +23,6 @@ var url = 'mongodb://user1:123456@ds139959.mlab.com:39959/url-shortener';
     db.close();
   }
 });
+
+//Shell connection command
+//mongo ds139959.mlab.com:39959/url-shortener -u admin -p 123456
