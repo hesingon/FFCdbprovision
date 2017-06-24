@@ -18,6 +18,7 @@ var url ='mongodb://heroku_nhvz97w1:a85dmnne2i516anqq867ir1b83@ds135552.mlab.com
     console.log('Unable to connect to the mongoDB server. Error:', err);
   } else {
     console.log('Connection established to', url);
+    db.send('Hello world!');
 
     // do some work here with the database.
 
