@@ -7,7 +7,7 @@ var MongoClient = mongodb.MongoClient;
 // Connection URL. This is where your mongodb server is running.
 
 //(Focus on This Variable)
-var url = 'mongodb://user1:123456@ds139959.mlab.com:39959/url-shortener';
+var url = process.env.MONGOLAB_URI || 'mongodb://localhost:27017/data';
 //'mongodb://user1:123456@ds139959.mlab.com:39959/url-shortener';     
 //(Focus on This Variable)
 
@@ -17,6 +17,8 @@ var url = 'mongodb://user1:123456@ds139959.mlab.com:39959/url-shortener';
     console.log('Unable to connect to the mongoDB server. Error:', err);
   } else {
     console.log('Connection established to', url);
+    console.log(process.env.MONGOLAB_URI);
+
 
     // do some work here with the database.
 
@@ -26,4 +28,4 @@ var url = 'mongodb://user1:123456@ds139959.mlab.com:39959/url-shortener';
 });
 
 //Shell connection command
-//mongo ds139959.mlab.com:39959/url-shortener -u admin -p 123456
+//mongo ds139959.mlab.com:39959/url-shortener -u user1 -p 123456
