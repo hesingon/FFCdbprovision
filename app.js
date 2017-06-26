@@ -12,7 +12,7 @@ var url = process.env.MONGOLAB_URI;
 //(Focus on This Variable)
 
 // Use connect method to connect to the Server
-  MongoClient.connect(url || 3000, function (err, db) {
+  MongoClient.connect(3000, function (err, db) {
   if (err) {
     console.log('Unable to connect to the mongoDB server. Error:', err);
   } else {
