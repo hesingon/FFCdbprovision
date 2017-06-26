@@ -7,8 +7,7 @@ var MongoClient = mongodb.MongoClient;
 // Connection URL. This is where your mongodb server is running.
 
 //(Focus on This Variable)
-var url ='mongodb://heroku_nhvz97w1:a85dmnne2i516anqq867ir1b83@ds135552.mlab.com:35552/heroku_nhvz97w1'; 
-
+var url = process.env.MONGOLAB_URI;
 //'mongodb://admin:123456@ds139959.mlab.com:39959/url-shortener';     
 //(Focus on This Variable)
 
