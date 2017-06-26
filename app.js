@@ -8,11 +8,11 @@ var MongoClient = mongodb.MongoClient;
 
 //(Focus on This Variable)
 var url = process.env.MONGOLAB_URI;
-//'mongodb://admin:123456@ds139959.mlab.com:39959/url-shortener';     
+//'mongodb://user1:123456@ds139959.mlab.com:39959/url-shortener';     
 //(Focus on This Variable)
 
 // Use connect method to connect to the Server
-  MongoClient.connect(url, function (err, db) {
+  MongoClient.connect(url || 3000, function (err, db) {
   if (err) {
     console.log('Unable to connect to the mongoDB server. Error:', err);
   } else {
