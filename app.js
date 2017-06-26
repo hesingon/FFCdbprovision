@@ -7,17 +7,16 @@ var MongoClient = mongodb.MongoClient;
 // Connection URL. This is where your mongodb server is running.
 
 //(Focus on This Variable)
-var url = process.env.MONGOLAB_URI;
+var url = 'mongodb://user1:123456@ds139959.mlab.com:39959/url-shortener';
 //'mongodb://user1:123456@ds139959.mlab.com:39959/url-shortener';     
 //(Focus on This Variable)
 
 // Use connect method to connect to the Server
-  MongoClient.connect(3000, function (err, db) {
+  MongoClient.connect(url, function (err, db) {
   if (err) {
     console.log('Unable to connect to the mongoDB server. Error:', err);
   } else {
     console.log('Connection established to', url);
-    db.send('Hello world!');
 
     // do some work here with the database.
 
