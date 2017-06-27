@@ -1,20 +1,30 @@
 {
-  "name": "trial",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "dependencies": {
-    "mongodb": "^2.2.29"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "engines": {
-    "node": "6.10.3",
-    "npm": "5.0.2"
-  },
-  "license": "ISC"
+    "name": "trial",
+    "version": "1.0.0",
+    "description": "Test for Hesington",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "main": "app.js",
+    "dependencies": {
+        "mongodb": "^2.2.29"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "engines": {
+        "node": "6.10.3",
+        "npm": "5.0.2"
+    },
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hesingon/FFCdbprovision.git"
+    },
+    "bugs": {
+        "url": "https://github.com/hesingon/FFCdbprovision/issues"
+    },
+    "homepage": "https://github.com/hesingon/FFCdbprovision#readme"
 }
